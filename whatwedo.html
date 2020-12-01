@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  padding: 5px;
+  width: 75%;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+       background: white;
+        width: 100%;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        color: #333333;
+        margin: 0px;
+
+}
+
+.active, .accordion:hover {
+  
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    color: #FF6F61
+
+}
+
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+
+
+<script src="https://kit.fontawesome.com/f123ff0a17.js" crossorigin="anonymous"></script>
+
+	<title>EUDUNES</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Ahana Yoga HTML Template">
+	<meta name="keywords" content="yoga, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
+	<link rel="stylesheet" href="css/nice-select.css"/>
+	<link rel="stylesheet" href="css/slicknav.min.css"/>
+
+	<!-- Main Stylesheets -->
+	<link rel="stylesheet" href="css/style.css"/>
+
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Header Section -->
+	<header class="header-section">
+		<div class="header-bottom">
+			<a href="index.html" class="site-logo">
+				<img src="img/logo.png" alt="">
+			</a>
+			
+			<div class="container">
+				<ul class="main-menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a>
+						<ul class="sub-menu">
+							<li><a href="about.html">Mission</a></li>
+							<li><a href="about.html">Vision</a></li>
+							<li><a href="about.html">Our Vlaue</a></li>
+							<li><a href="about.html">Our Story</a></li>
+						</ul>
+					</li>
+					<li><a href="whatwedo.html">What We do</a></li>
+					<li><a href="meettheteam.html">Meet the Team</a></li>
+					
+					<li><a href="contact.html">Contact</a>
+						<ul class="sub-menu">
+							<li><a href="contact.html">Commercial Enquires</a></li>
+							<li><a href="contact.html">Find Us</a></li>
+							
+						</ul>
+					</li>
+					<li><a href="partners.html">Partners</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!-- Header Section end -->
+
+	<!-- Infor Model end -->
+	                                                                              
+	<!-- Page top Section -->
+	<section class="page-top-section set-bg manubakground" data-setbg="img/page-top-bgwhatwedo.jpg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7 m-auto text-white">
+					<h2>What We Do</h2>
+					<p></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Page top Section end -->
+
+	<!-- Blog Section -->
+	<section class="trainers-page-section spad overflow-hidden">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="blog-item2">
+						<img src="img/whatwedo/1.jpg" alt="">
+						<div class="bi-text">
+							<button class="accordion" style="text-align: center; font-family: adobe-garamond-pro,serif; font-style: normal; font-weight: 400; font-size: 25px; line-height: 1.8; margin-top: 0rem;">Consulting Service</button>
+                     	<div class="panel">
+                        	<p style="font-family: adobe-garamond-pro,serif; font-style: normal; font-weight: 400; font-size: 17.5px; text-align: justify;  text-align-last: center; line-height: 1.8; margin-bottom: 0.7rem">
+                          	We operate for the private and public sector providing consulting services, specializing in bridging East and West, Europe, and Asia. With our presence in Estonia and South Korea we are able to support clients with: <br></p>
+						<p style="text-align: left; font-family: adobe-garamond-pro,serif; font-style: normal; font-weight: 400; font-size: 17.5px; padding-left: 0.5rem; line-height: 1.8;">
+						<i class="fas fa-leaf colorr"></i> Project management of international projects<br>
+                        <i class="fas fa-leaf colorr"></i> International clients relations management<br>
+                        <i class="fas fa-leaf colorr"></i> Business development for new markets and/or consolidation of new partnerships<br>
+                        <i class="fas fa-leaf colorr"></i> Market research and business opportunities evaluation<br>
+                        <i class="fas fa-leaf colorr"></i> Business strategies and business support<br>
+                        <i class="fas fa-leaf colorr"></i> More...just get in touch!</p>
+                       	</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="blog-item3">
+						<img src="img/whatwedo/3.png" alt="">
+						<div class="bi-text">
+							<button class="accordion" style="text-align: center; font-family: adobe-garamond-pro,serif; font-style: normal; font-weight: 400; font-size: 25px; line-height: 1.8; margin-top: 0rem;">Our Own Brand</button>
+                     	<div class="panel">
+                        	<p style="font-family: adobe-garamond-pro,serif; font-style: normal; font-weight: 400; font-size: 17.5px; text-align: justify;  text-align-last: center; line-height: 1.8; margin-bottom: 0.15rem">
+                          	The wellness moment you were looking for: Luna Mediterranea.<br>
+								Brand Luna Mediterranea provides a selection of organic herbal products chosen for their healing and wellbeing properties and both a community platform with specialized natural wellness contents.</p>
+                       	</div>
+						</div>
+						
+						
+					</div>
+				</div>
+				</div>
+	</section>
+				<!--<div class="col-lg-4 col-md-6">
+					<div class="blog-item">
+						<img src="img/whatwedo/3.jpg" alt="">
+						<div class="bi-text">
+							<h2><a>Etc</a></h2>
+							<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis prae-sentium voluptatum deleniti</p>
+						</div>
+						
+					</div>
+				</div>-->
+			
+		
+	<!-- Blog Section end -->
+<section><h2><br><br></h2></section>
+
+
+	<!-- Footer Section -->
+	
+
+	<footer class="footer-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-sm-6">
+					<div class="footer-widget">
+						<div class="about-widget about-widgett">
+							<img src="img/logo-3.png" alt="">
+							<p>Services providing a top class quality to out partners and clients</p>
+							<ul style="font-family: futura-pt,sans-serif; font-weight: 400; font-size: 20px">
+								<li><i class="material-icons">email</i>Eudunesinfo@eudunes.com</li>
+								<li><i class="material-icons">map</i>Estonia Harju maakond, Tallinn, Põhja-Tallinna linnaosa, Telliskivi tn 57, 10412</li>
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="footer-widget pl-0 pl-lg-5">
+						<h2 class="fw-title">Site Map</h2>
+						<ul style="font-family: futura-pt,sans-serif; font-weight: 400; font-size: 18px">
+							<li><a href="about.html">About</a></li>
+							<li><a href="whatwedo.html">What We Do</a></li>
+							<li><a href="meettheteam.html">Meet the Team</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="partners.html">Partners</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-sm-6">
+					<div class="footer-widget">
+						<h2 class="fw-title">About Us</h2>
+						<ul style="font-family: futura-pt,sans-serif; font-weight: 400; font-size: 18px">
+							<li><a href="about.html">Mission</a></li>
+							<li><a href="about.html">Vision</a></li>
+							<li><a href="about.html">Our Vlaue</a></li>
+							<li><a href="about.html">Our Story</a></li>
+							
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="footer-widget pl-0 pl-lg-5 about-widgett">
+						<h2 class="fw-title">Contact Us</h2>
+						<p>Do you want to work with us or become our client? Feel free to contact us</p>
+						<form class="infor-form">
+							<input type="text" placeholder="Your Email">
+							<button><img src="img/icons/send.png" alt=""></button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="footer-social">
+							<a href="https://www.linkedin.com/company/eudunes"><i class="fa fa-linkedin"></i></a>
+						</div>
+					</div>
+					<div class="col-md-8 text-md-right">
+						<div class="copyright" style="font-family: futura-pt,sans-serif; font-weight: 400; font-size: 17px">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by <a>EUDUNES</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer Section end -->
+	
+	<div class="back-to-top"><img src="img/icons/up-arrow.png" alt=""></div>
+
+	<!-- Search model -->
+	<div class="search-model set-bg" data-setbg="img/search-bg.jpg">
+		<div class="h-100 d-flex align-items-center justify-content-center">
+			<div class="search-close-switch"><i class="material-icons">close</i></div>
+			<form class="search-moderl-form">
+				<input type="text" id="search-input" placeholder="Search">
+				<button><img src="img/icons/search-2.png" alt=""></button>
+			</form>
+		</div>
+	</div>
+	<!-- Search model end -->
+	
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/vendor/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.nice-select.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+	
+
+	</body>
+</html>
